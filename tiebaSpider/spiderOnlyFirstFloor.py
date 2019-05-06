@@ -210,10 +210,11 @@ def get_main_contents_list(mainContents, pageMax = 1):
 			pause()
 	return result
 
+
 def get_main_contents_dict_first_floor(mainContents, pageMax = 1):
 	# 返回列表
 	# 每个子数据是个字典, 形如
-	# {floorIndex:1, authorName:'name',floorContent: 'content'}
+	# {authorName:'name',firstFloorContent: 'content'}
 
 	result = {}
 	for page in range(1,pageMax+1):
@@ -235,6 +236,7 @@ def get_main_contents_dict_first_floor(mainContents, pageMax = 1):
 			# 如果属性是空说明是广告
 		result['firstFloorContent'] = content
 		pause()
+
 	return result
 
 def get_main_contents_string_br(mainContents, pageMax = 1):
@@ -468,9 +470,10 @@ def gogogo_list_first_floor(pageWant = 1, keyWord = "杭州电子科技大学"):
 			oneArticleDict['title'] = title
 			oneArticleDict['href'] = article
 			result.append(oneArticleDict)
+		print("page", page+1, "done")
 
 	# print(result)
-
+	print("All firstFloorContent done")
 	return result
 # originUrl = "http://tieba.baidu.com/f?kw=%E6%9D%AD%E5%B7%9E%E7%94%B5%E5%AD%90%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6&ie=utf-8&pn="
 # originUrl = "http://tieba.baidu.com/f/search/res?isnew=1&kw=&qw=%BA%BC%D6%DD%B5%E7%D7%D3%BF%C6%BC%BC%B4%F3%D1%A7&un=&rn=10&pn=0&sd=&ed=&sm=1&only_thread=1&pn="

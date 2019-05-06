@@ -1,7 +1,6 @@
 '''
 @返回数据格式:
 [{
-		'authorName': '作者名',
 		'firstFloorContent': '第一楼内容',
 		'title': '标题',
 		'href': 'http链接',
@@ -10,7 +9,6 @@
 	},
 
 	{
-		'authorName': '作者名',
 		'firstFloorContent': '第一楼内容',
 		'title': '标题',
 		'href': 'http链接',
@@ -22,12 +20,12 @@
 '''
 
 
-from tiebaSpider import spiderOnlyFirstFloor as soff
+from tiebaSpider import spiderOnlyFirstFloorAdvance as soffa
 from SentimentAnalysis import Analysis
 import csv
 
 def getContentAndSentimentDict(page=1, keyword="杭州电子科技大学"):
-	articleList = soff.gogogo_list_first_floor(page, keyword)
+	articleList = soffa.gogogo_list_first_floor_advance(page, keyword)
 	# 获取所有文章的信息的列表，每个数据元素格式如下
 
 	'''
@@ -69,7 +67,9 @@ if __name__ == '__main__':
 	'''
 	dataList = getContentAndSentimentDict(page = page, keyword = keyword)
 	# print(dataList)
+	print("All contents with sentiment done")
 	for data in dataList:
 		print(data)
 	'''
+
 	getContentAndSentimentDictToCsv(page=page, keyword = keyword)
