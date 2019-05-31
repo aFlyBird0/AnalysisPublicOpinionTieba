@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>百度贴吧™搜索</title>
+</head>
+<body>
+<center><h1>百度贴吧™搜索</h1></center>
+<center>
+    <form id="context" action="{{ url_for('index') }}" method="POST">
+        输入宁要搜索的关键词 <input type="text" name="context">
+        输入宁要请求的页数 <input type="text" name="page">
+        <!--留言标题: <input type="text" name="say_title"><br>
+        留言内容: <input type="text" name="say"><br>-->
+        <button>搜索</button>
+    </form>
+</center>
+<center>
+    <table border="2">
+        <thead>
+        <tr>
+            <th>帖子</th>
+            <th>内容</th>
+            <th>链接地址</th>
+            <th>情感分析</th>
+            <!--<th>留言时间</th>-->
+        </tr>
+        </thead>
+        <tbody>
+        {% for say in says %}
+            <tr>
+                <td>{{ say['title'] }}</td>
+                <td>{{ say['text'] }}</td>
+                <td><a href="{{ say['href'] }}">原帖地址</a></td>
+                <td>{{ say['emotion'] }}"</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</center>
+</body>
+</html>

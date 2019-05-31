@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcf32079-dbba-4730-81c1-f04d3d635c2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/20190427.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentimentAnalysis/Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/SentimentAnalysis/Analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentimentAnalysis/getAccessToken.py" beforeDir="false" afterPath="$PROJECT_DIR$/SentimentAnalysis/getAccessToken.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getData.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getDataWithoutAuthor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloorAdvance.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloorAdvance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiebaSpider/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiebaSpider/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiebaSpider/templates/showForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/tiebaSpider/templates/showForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiebaSpider/tieba3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiebaSpider/tieba3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiebaSpider/tiebaSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiebaSpider/tiebaSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiebaSpider/tiebaSearchForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiebaSpider/tiebaSearchForm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/情感分析库演示.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/百度情感分析API测试.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/new_html.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="480" column="17" selection-start-line="480" selection-start-column="17" selection-end-line="480" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiebaSpider/new_tiebaSearch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tiebaSpider/tiebaSearchForm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiebaSpider/tiebaSearch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiebaSpider/tieba3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloorAdvance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2120">
+              <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+              <folding>
+                <element signature="e#85#114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gogo</find>
+      <find>gogogo</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/getData.py" />
+        <option value="$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloorAdvance.py" />
+        <option value="$PROJECT_DIR$/getDataWithoutAuthor.py" />
+        <option value="$PROJECT_DIR$/tiebaSpider/templates/test.html" />
+        <option value="$PROJECT_DIR$/tiebaSpider/templates/base.html" />
+        <option value="$PROJECT_DIR$/tiebaSpider/templates/info_get.html" />
+        <option value="D:/ProgramFiles/Anaconda3/Lib/site-packages/flask_bootstrap/__init__.py" />
+        <option value="$PROJECT_DIR$/tiebaSpider/tiebaSearch.py" />
+        <option value="$PROJECT_DIR$/tiebaSpider/static/my_js/index.js" />
+        <option value="$PROJECT_DIR$/tiebaSpider/new_html.html" />
+        <option value="$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloor.py" />
+        <option value="$PROJECT_DIR$/SentimentAnalysis/getAccessToken.py" />
+        <option value="$PROJECT_DIR$/SentimentAnalysis/Analysis.py" />
+        <option value="$PROJECT_DIR$/tiebaSpider/templates/info.html" />
+        <option value="$PROJECT_DIR$/tiebaSpider/templates/new_html.html" />
+        <option value="$PROJECT_DIR$/tiebaSpider/new_tiebaSearch.py" />
+        <option value="$PROJECT_DIR$/1.py" />
+        <option value="$PROJECT_DIR$/tiebaSpider/tiebaSearchForm.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AnalysisPublicOpinionTieba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalysisPublicOpinionTieba" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnalysisPublicOpinionTieba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalysisPublicOpinionTieba" type="462c0819:PsiDirectoryNode" />
+              <item name="SentimentAnalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnalysisPublicOpinionTieba" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnalysisPublicOpinionTieba" type="462c0819:PsiDirectoryNode" />
+              <item name="tiebaSpider" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Github_Repositories\cnki\Innovation_Practice_Term01\AnalysisPublicOpinionTieba\tiebaSpider\templates" />
+      <recent name="D:\Github_Repositories\cnki\Innovation_Practice_Term01\AnalysisPublicOpinionTieba\tiebaSpider\static\my_js" />
+      <recent name="D:\Github_Repositories\cnki\Innovation_Practice_Term01\AnalysisPublicOpinionTieba\tiebaSpider" />
+      <recent name="D:\Github_Repositories\cnki\Innovation_Practice_Term01\AnalysisPublicOpinionTieba\tiebaSpider\flask_bootstrap\static\my_img" />
+      <recent name="D:\Github_Repositories\cnki\Innovation_Practice_Term01\AnalysisPublicOpinionTieba\tiebaSpider\flask_bootstrap\static\my_css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\InnovationPractice\AnalysisPublicOpinionTieba\tiebaSpider" />
+      <recent name="D:\InnovationPractice\AnalysisPublicOpinionTieba\tiebaSpider\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.new_tiebaSearch">
+    <configuration name="info.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AnalysisPublicOpinionTieba/tiebaSpider/templates/info.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnalysisPublicOpinionTieba" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SentimentAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SentimentAnalysis/Analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getAccessToken" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnalysisPublicOpinionTieba" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SentimentAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SentimentAnalysis/getAccessToken.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="new_tiebaSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnalysisPublicOpinionTieba" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tiebaSpider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tiebaSpider/new_tiebaSearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tiebaSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnalysisPublicOpinionTieba" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tiebaSpider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tiebaSpider/tiebaSearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.new_tiebaSearch" />
+        <item itemvalue="Python.Analysis" />
+        <item itemvalue="Python.getAccessToken" />
+        <item itemvalue="Python.tiebaSearch" />
+        <item itemvalue="JavaScript Debug.info.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcf32079-dbba-4730-81c1-f04d3d635c2d" name="Default Changelist" comment="" />
+      <created>1557397244347</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557397244347</updated>
+      <workItem from="1557397250396" duration="124000" />
+      <workItem from="1557397509193" duration="16810000" />
+      <workItem from="1557446638031" duration="1257000" />
+      <workItem from="1557458189622" duration="14000" />
+      <workItem from="1558051339720" duration="2586000" />
+      <workItem from="1558054242840" duration="3470000" />
+      <workItem from="1558090226818" duration="4000" />
+      <workItem from="1558614860310" duration="10974000" />
+      <workItem from="1558655870725" duration="1395000" />
+      <workItem from="1558797308557" duration="613000" />
+      <workItem from="1559261423686" duration="12755000" />
+      <workItem from="1559308263248" duration="70000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="50072000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21313673" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32956153" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AnalysisPublicOpinionTieba$tiebaSearch.coverage" NAME="tiebaSearch Coverage Results" MODIFIED="1559261640780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tiebaSpider" />
+    <SUITE FILE_PATH="coverage/AnalysisPublicOpinionTieba$new_tiebaSearch.coverage" NAME="new_tiebaSearch Coverage Results" MODIFIED="1559308278263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tiebaSpider" />
+    <SUITE FILE_PATH="coverage/AnalysisPublicOpinionTieba$spiderOnlyFirstFloorAdvance.coverage" NAME="spiderOnlyFirstFloorAdvance Coverage Results" MODIFIED="1558051450999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tiebaSpider" />
+    <SUITE FILE_PATH="coverage/AnalysisPublicOpinionTieba$getDataWithoutAuthor.coverage" NAME="getDataWithoutAuthor Coverage Results" MODIFIED="1557406133116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AnalysisPublicOpinionTieba$Analysis.coverage" NAME="Analysis Coverage Results" MODIFIED="1559267294022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SentimentAnalysis" />
+    <SUITE FILE_PATH="coverage/AnalysisPublicOpinionTieba$getAccessToken.coverage" NAME="getAccessToken Coverage Results" MODIFIED="1559267089600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SentimentAnalysis" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/20190427.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://D:/ProgramFiles/Anaconda3/Lib/csv.py" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/test.html" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/flask_bootstrap/nav.py" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/bootstrap-4.1.3-dist/js/bootstrap.js" />
+    <entry file="file://D:/ProgramFiles/Anaconda3/Lib/site-packages/flask/templating.py" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/flask_bootstrap/static/css/bootstrap.css" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/flask_bootstrap/templates/bootstrap/google.html" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/flask_bootstrap/templates/bootstrap/base.html" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/flask_bootstrap/static/my_img/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/flask_bootstrap/static/my_img/search-white.png" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/flask_bootstrap/static/my_css/index.css" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/static/my_img/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/static/my_img/search-white.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/static/my_css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/info_get.html" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/info.json" />
+    <entry file="file://D:/ProgramFiles/Anaconda3/Lib/site-packages/flask_bootstrap/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/static/my_js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/showForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SentimentAnalysis/getAccessToken.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#14#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SentimentAnalysis/Analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+          <folding>
+            <element signature="e#14#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#15#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/情感分析库演示.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloorAdvance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2120">
+          <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+          <folding>
+            <element signature="e#85#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/new_html.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/templates/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getDataWithoutAuthor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/百度情感分析API测试.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/spiderOnlyFirstFloor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="480" column="17" selection-start-line="480" selection-start-column="17" selection-end-line="480" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/new_tiebaSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/tiebaSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/tieba3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiebaSpider/tiebaSearchForm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
