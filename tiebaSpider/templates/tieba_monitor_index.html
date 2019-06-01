@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>百度贴吧™ 监控平台</title>
+    <link rel="shortcut icon" href="../static/my_img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../static/bootstrap-4.1.3-dist/css/bootstrap.css"/>
+    <link href="../static/my_css/index.css" rel="stylesheet"/>
+</head>
+
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">介绍</h4>
+                    <p class="text-muted">
+                        本服务可以通过指定关键词，搜索关键词在百度贴吧™中的内容，辅以AI平台语义分析，可以实现实时的监控。
+                        服务首先通过调用 “百度贴吧” 的搜索服务来获取内容，再经过python程序处理内容，
+                        对内容进行语义分析，得出其情感取向，在本页面中展示。
+                    </p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">资料</h4>
+                    <ul class="list-unstyled">
+                        <li><a target="_blank"
+                               href="https://ryanligod.github.io/2018/11/15/2018-11-15%20%E4%BD%BF%E7%94%A8%20jQuery%20%E5%AE%9E%E7%8E%B0%20Solr%20%E6%90%9C%E7%B4%A2%E7%9A%84%E5%89%8D%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA/"
+                               class="text-white">本页面的设计讲解</a></li>
+                        <li><a target="_blank" href="https://github.com/dingjianhub/AnalysisPublicOpinionTieba"
+                               class="text-white">本项目的
+                            Github 地址</a></li>
+                        <li><a target="_blank" href="https://github.com/RyanLiGod/solr-web" class="text-white">本项目参考的前端原作者的
+                            Github 地址</a></li>
+                        <li><a target="_blank" href="https://callmejiagu.github.io/categories/Solr/" class="text-white">”callmejiagu“的
+                            Solr 讲解</a></li>
+                        <li><a target="_blank" href="https://getbootstrap.com/" class="text-white">Bootstrap 4</a></li>
+                        <li><a target="_blank" href="https://jquery.com/" class="text-white">jQuery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand align-items-center" href="#">
+                <img src="../static/my_img/search-white.png" width="30" height="30" class="d-inline-block align-top"/>
+                移动互联实验室
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+    <section class="jumbotron text-center not-search">
+        <div class="container">
+            <h1 class="jumbotron-heading">百度贴吧™ 监控平台</h1>
+            <div class="input-group mt-5 mb-3 position-relative">
+                <input type="text" id="keyword" class="form-control keyword-input" placeholder="请输入关键词"
+                       autocomplete="off"
+                       aria-describedby="button-addon2"/>
+                <input type="text" id="page" class="form-control keyword-input" placeholder="请输入爬取的页数"
+                       autocomplete="off"
+                       aria-describedby="button-addon2"/>
+                <div class="input-group-append">
+                    <button id="searchInfo" class="btn btn-outline-secondary px-4" type="button">搜索</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="resultSection" class="py-5 bg-light">
+        <div class="container">
+            <div class="row" id="result">
+                <!-- 每一条结果将会用jQuery插入到这里 -->
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="../static/my_js/index.js"></script>
+</body>
+
+</html>
