@@ -124,7 +124,9 @@ def get_list_first_floor_advance(page_want=1, keyword="杭州电子科技大学"
 if __name__ == '__main__':
     print('开始爬取')
 
-    result = get_list_first_floor_advance(2, "杭州电子科技大学 三位一体")
+    result = get_list_first_floor_advance(1, "杭州电子科技大学 三位一体")
+
+    print(result)
 
     for res in result:
         print(res['firstFloorContent'])

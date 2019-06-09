@@ -4,6 +4,7 @@ from SentimentAnalysis import Analysis
 from flask_bootstrap import Bootstrap
 import time
 import json
+import urllib
 
 app = Flask(__name__)
 
@@ -53,15 +54,39 @@ def show():
     # return render_template('info.html', page=page, keyword=keyword, result=result)
     # result = spiderOnlyFirstFloorAdvance.get_list_first_floor_advance(page_want=1, keyword="杭州电子科技大学")
     # return render_template('tieba_monitor_index.html', result=result)
-    return render_template('tieba_monitor_index.html', )
+
+    return render_template('tieba_monitor_index.html',)
 
 
 @app.route('/info?page=<string:page>&keyword=<string:keyword>', methods=['GET', 'POST'])
-def get_info():
-    page = request.args.get('page')
-    keyword = request.args.get('keyword')
+def get_info(page, keyword):
+    # page = request.args.get('page')
+    # keyword = request.args.get('keyword')
+    # page = 1
+    # keyword = "杭州电子科技大学 三位一体"
     result = spiderOnlyFirstFloorAdvance.get_list_first_floor_advance(page_want=page, keyword=keyword)
-    return result
+
+    for res in result:
+        print(res['firstFloorContent'])
+        emotion = Analysis.analysis_Dict(res['title'])['items'][0]['positive_prob']  # 调用百度的”情感分析API“，返回文本的情感极性值
+        if emotion >= 0.800:  # 对返回的值进行一个登记划分，以 20% 为一档
+            emotion_type = "非常积极"
+        elif 0.600 <= emotion < 0.800:
+            emotion_type = "较为积极"
+        elif 0.400 <= emotion < 0.600:
+            emotion_type = "中性情感"
+        elif 0.200 <= emotion < 0.400:
+            emotion_type = "较为消极"
+        elif emotion < 0.200:
+            emotion_type = "非常消极"
+        res['emotion_type'] = emotion_type
+        res['emotion'] = emotion
+    result_json = json.dumps(result)
+    print(result_json)
+    rst = make_response(result_json)
+    rst.headers['Access-Control-Allow-Origin'] = '*'
+    print(rst)
+    return rst
 
 
 if __name__ == '__main__':
