@@ -25,7 +25,8 @@ function searchInfo(page, keyword) {
     // 首先清空result中的内容以便内容填入
     $("#result").empty();
     $.ajax({
-        url: "http://localhost:5000/info?page=" + page + "&keyword=" + keyword,
+         url: "http://localhost:5000/info?page=" + page + "&keyword=" + keyword ,
+        //url: "http://localhost:5000/info",
         type: "GET",
         dataType: "json",
         success: function (result) {
@@ -36,12 +37,12 @@ function searchInfo(page, keyword) {
                         <div class='col-md-12 mb-4'>
                             <div class='card mb-12 shadow-sm'>
                                 <div class='card-body'>
-                                    <h5>` + res[i].firstFloorContent + ` 
-                                        <small style='margin-left: 10px'>` + res[i].title + `</small> 
-                                        <small style='margin-left: 10px'>` + res[i].href + `</small>
-                                    </h5>
-                                    <p class='text-muted' style='margin-bottom: 0.5em'>` + res[i].unit + `</p>
-                                    <p class='card-text'>` + res[i].abstract + `</p>
+                                    <h5>` + result[i].title + `
+                                        <small style='margin-left: 10px'>` + result[i].firstFloorContent + `</small> 
+                                        <small style='margin-left: 10px'>` + result[i].href + `</small>
+                                    <h5>
+                                    <p class='text-muted' style='margin-bottom: 0.5em'>` + result[i].emotion + `</p>
+                                    <p class='card-text'>` + result[i].emotion_type + `</p>
                                 </div>
                             </div>
                         </div>
