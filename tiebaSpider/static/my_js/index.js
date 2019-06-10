@@ -33,7 +33,8 @@ function searchInfo(page, keyword) {
             // 循环输出json对象result中的键值对
             $.each(result, function (i) {
                 // 将返回的结果包装成HTML
-                resultItem = `
+                resultItem =
+                    `
                         <div class='col-md-12 mb-4'>
                             <div class='card mb-12 shadow-sm'>
                                 <div class='card-body'>

@@ -92,7 +92,7 @@ def get_main_content_first_floor_advance(article_soup):
     return content
 
 
-def get_list_first_floor_advance(page_want=1, keyword="杭州电子科技大学"):
+def get_list_first_floor_advance(page_want, keyword):
     '''
     根据关键词和指定页数爬取
     page_want:爬搜索结果的几页
@@ -103,6 +103,35 @@ def get_list_first_floor_advance(page_want=1, keyword="杭州电子科技大学"
     url_suffix = "&un=&rn=10&pn=0&sd=&ed=&sm=1&only_thread=1&pn="
     origin_url = make_up_url(url_prefix, url_suffix, keyword)
     for page in range(page_want):  # 逐页爬取
+        article_list = get_url_list_of_one_page(origin_url, page)
+        for article in article_list:
+            soup = get_soup_of_article(article)
+            title = get_title(article)
+            one_article_info_dict = {}
+            one_article_info_dict['firstFloorContent'] = get_main_content_first_floor_advance(soup)
+            one_article_info_dict['title'] = title
+            one_article_info_dict['href'] = article
+            # one_article_info_dict['positive_prob'] = 0
+            # one_article_info_dict['confidence'] = 0
+            # print(oneArticleDict)
+            result.append(one_article_info_dict)
+        print("page", page + 1, "process done")
+
+    print("All first floor comment get done")
+    return result
+
+
+def get_json_first_floor_advance(base_page, keyword):
+    """
+    根据关键词和指定页数爬取
+    page_want:爬搜索结果的几页
+    keyword:关键词
+    """
+    result = {}
+    url_prefix = "http://tieba.baidu.com/f/search/res?ie=utf-8&isnew=1&kw=&qw="
+    url_suffix = "&un=&rn=10&pn=0&sd=&ed=&sm=1&only_thread=1&pn="
+    origin_url = make_up_url(url_prefix, url_suffix, keyword)
+    for page in range(base_page):  # 逐页爬取
         article_list = get_url_list_of_one_page(origin_url, page)
         for article in article_list:
             soup = get_soup_of_article(article)
