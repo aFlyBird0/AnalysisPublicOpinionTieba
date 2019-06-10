@@ -1,10 +1,8 @@
 from flask import Flask, request, render_template, redirect, url_for, make_response
-from tiebaSpider import tieba3, spiderOnlyFirstFloorAdvance
+from tiebaSpider import spiderOnlyFirstFloorAdvance
 from SentimentAnalysis import Analysis
 from flask_bootstrap import Bootstrap
-import time
 import json
-import urllib
 
 app = Flask(__name__)
 
@@ -45,27 +43,28 @@ def index():
         return redirect(url_for('index'))
 
 
-@app.route('/home', methods=['GET', 'POST'])  # 定义路由(Views)，可以理解为定义页面的URL
-def show():
-    # file_object = open('../templates/tieba_monitor_index.html')
-    # try:
-    #     result_text = file_object.read()
-    # finally:
-    #     file_object.close()
-    # rst = make_response(result_text)
-    # rst.headers['Access-Control-Allow-Origin'] = '*'
-    #
-    # return rst
-
+@app.route('/tieba', methods=['GET', 'POST'])  # 定义路由(Views)，可以理解为定义页面的URL
+def show_tieba_index():
     return render_template('tieba_monitor_index.html', )
+
+
+@app.route('/weibo', methods=['GET', 'POST'])  # 定义路由(Views)，可以理解为定义页面的URL
+def show_weibo_index():
+    return render_template('weibo_monitor_index.html', )
 
 
 @app.route('/info', methods=['GET', 'POST'])
 def get_info():
-    page = int(request.args.get('page'))
+    """
+    调用前面写好的爬虫方法 和 情感分析接口
+    对情感分析返回的值，自己手动设置一个阶梯，按照 20% 来划分层次
+    等待改进的点：每次爬取的时间比较长，需要等待一段时间才能返回结果
+    :return:
+    """
+    page = int(request.args.get('page'))  # 别问这个啥用处，我也不清楚，胶水粘起来的，能跑……
     keyword = request.args.get('keyword')
     result = spiderOnlyFirstFloorAdvance.get_list_first_floor_advance(page_want=page, keyword=keyword)
-
+    # result = spiderOnlyFirstFloorAdvance.get_json_first_floor_advance(page_order=page, keyword=keyword)
     for res in result:
         print(res['firstFloorContent'])
         emotion = Analysis.analysis_Dict(res['title'])['items'][0]['positive_prob']  # 调用百度的”情感分析API“，返回文本的情感极性值
@@ -88,16 +87,19 @@ def get_info():
     rst.headers['Access-Control-Allow-Origin'] = '*'
     print(rst)
     return rst
-    # return render_template('tieba_monitor_index.html', )
 
 
-'''
-@app.route('/info', methods=['GET', 'POST'])
-def get_info_test():
-    page = 1
-    keyword = '杭州电子科技大学'
-    result = spiderOnlyFirstFloorAdvance.get_list_first_floor_advance(page_want=page, keyword=keyword)
-
+# 尝试优化
+@app.route('/info_new', methods=['GET', 'POST'])
+def get_info_new():
+    """
+    调用前面写好的爬虫方法 和 情感分析接口
+    对情感分析返回的值，自己手动设置一个阶梯，按照 20% 来划分层次
+    :return:
+    """
+    page = int(request.args.get('page'))  # 别问这个啥用处，我也不清楚，胶水粘起来的，能跑……
+    keyword = request.args.get('keyword')
+    result = spiderOnlyFirstFloorAdvance.quick_get_first_floor_advance(page_order=page, keyword=keyword)
     for res in result:
         print(res['firstFloorContent'])
         emotion = Analysis.analysis_Dict(res['title'])['items'][0]['positive_prob']  # 调用百度的”情感分析API“，返回文本的情感极性值
@@ -120,7 +122,6 @@ def get_info_test():
     rst.headers['Access-Control-Allow-Origin'] = '*'
     print(rst)
     return rst
-'''
 
 
 if __name__ == '__main__':

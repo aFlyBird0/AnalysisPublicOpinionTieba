@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 from flask_bootstrap import Bootstrap
 # from flask.ext.bootstrap import Bootstrap
 
-from tiebaSpider import tieba3, spiderOnlyFirstFloorAdvance
+from tiebaSpider import spiderOnlyFirstFloorAdvance
 import json
 
 app = Flask(__name__)  # 创建一个Web应用

@@ -21,8 +21,9 @@ def pause():
     '''
     延迟一到两秒
     '''
-    sleepTime = random.randint(100, 2000) * 1.0 / 1000
+    # sleepTime = random.randint(100, 2000) * 1.0 / 1000
     # 延迟0.1-2秒
+    sleepTime = 0.1
     time.sleep(sleepTime)
 
 
@@ -88,7 +89,7 @@ def get_main_content_first_floor_advance(article_soup):
     else:
         content = ""
     # pause()
-    time.sleep(0.2)
+    time.sleep(0.1)
     return content
 
 
@@ -121,43 +122,45 @@ def get_list_first_floor_advance(page_want, keyword):
     return result
 
 
-def get_json_first_floor_advance(base_page, keyword):
+def quick_get_first_floor_advance(page_order, keyword):
     """
     根据关键词和指定页数爬取
     page_want:爬搜索结果的几页
     keyword:关键词
     """
-    result = {}
+    result_list = []
     url_prefix = "http://tieba.baidu.com/f/search/res?ie=utf-8&isnew=1&kw=&qw="
     url_suffix = "&un=&rn=10&pn=0&sd=&ed=&sm=1&only_thread=1&pn="
     origin_url = make_up_url(url_prefix, url_suffix, keyword)
-    for page in range(base_page):  # 逐页爬取
-        article_list = get_url_list_of_one_page(origin_url, page)
-        for article in article_list:
-            soup = get_soup_of_article(article)
-            title = get_title(article)
-            one_article_info_dict = {}
-            one_article_info_dict['firstFloorContent'] = get_main_content_first_floor_advance(soup)
-            one_article_info_dict['title'] = title
-            one_article_info_dict['href'] = article
-            # one_article_info_dict['positive_prob'] = 0
-            # one_article_info_dict['confidence'] = 0
-            # print(oneArticleDict)
-            result.append(one_article_info_dict)
-        print("page", page + 1, "process done")
-
+    article_list = get_url_list_of_one_page(origin_url, page_order)
+    print(article_list)
+    for article in article_list:
+        soup = get_soup_of_article(article)
+        title = get_title(article)
+        one_article_info_dict = {}
+        one_article_info_dict['firstFloorContent'] = get_main_content_first_floor_advance(soup)
+        one_article_info_dict['title'] = title
+        one_article_info_dict['href'] = article
+        # one_article_info_dict['positive_prob'] = 0
+        # one_article_info_dict['confidence'] = 0
+        # print(oneArticleDict)
+        result_list.append(one_article_info_dict)
+        print(result_list)
+    print("page : ", page_order, " process done")
+    result_json = json.dumps(result_list).encode('UTF-8')
     print("All first floor comment get done")
-    return result
+    return result_list
 
 
 if __name__ == '__main__':
     print('开始爬取')
 
-    result = get_list_first_floor_advance(1, "杭州电子科技大学 三位一体")
+    # result = get_list_first_floor_advance(1, "杭州电子科技大学 三位一体")
+    # print(result)
+    # for res in result:
+    #     print(res['firstFloorContent'])
+    #     print(res['title'])
+    #     print(res['href'])
 
+    result = quick_get_first_floor_advance(page_order=1, keyword='浙江大学')
     print(result)
-
-    for res in result:
-        print(res['firstFloorContent'])
-        print(res['title'])
-        print(res['href'])
