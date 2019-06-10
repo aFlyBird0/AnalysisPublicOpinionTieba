@@ -145,9 +145,10 @@ def quick_get_first_floor_advance(page_order, keyword):
         # one_article_info_dict['confidence'] = 0
         # print(oneArticleDict)
         result_list.append(one_article_info_dict)
-        print(result_list)
+        # print(result_list)
     print("page : ", page_order, " process done")
-    result_json = json.dumps(result_list).encode('UTF-8')
+    print(result_list)
+    # result_json = json.dumps(result_list).encode('UTF-8')
     print("All first floor comment get done")
     return result_list
 

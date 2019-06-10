@@ -1,11 +1,15 @@
-from web import web
+import weiboSpider.web as web
 import time
 import re
+
+import requests
+from lxml import etree
 
 
 class weibo(web):
     def __int__(self):
-        super.__int__()
+
+        super.__int__(self)
         self.href = None
         self.page = None
         self.q = None
@@ -38,7 +42,6 @@ class weibo(web):
                 s = ''.join(m)
                 y = [name, s]
                 self.card.append(y)
-            time.sleep(0.3)
 
 
 # #    def parse_html(self):

@@ -27,7 +27,7 @@ function searchInfo(page, keyword) {
     // 首先清空result中的内容以便内容填入
     $("#result").empty();
     $.ajax({
-        url: "http://localhost:5000/info?page=" + page + "&keyword=" + keyword ,
+        url: "http://localhost:5000/info?page=" + page + "&keyword=" + keyword,
         //url: "http://localhost:5000/info_new?page=" + page + "&keyword=" + keyword ,
         //url: "http://localhost:5000/info",
         type: "GET",
