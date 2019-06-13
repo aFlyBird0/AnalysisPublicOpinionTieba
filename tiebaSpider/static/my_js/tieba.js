@@ -93,7 +93,7 @@ function loadMore(page_g, keyword) {
     //$("#result").empty();
     $.ajax({
         //url: "http://localhost:5000/tiebaInfo?page=" + page + "&keyword=" + keyword,
-        url: "http://localhost:5000/info_new?page=" + page_g + "&keyword=" + keyword,
+        url: "http://localhost:5000/tiebaInfoLoadMore?page=" + page_g + "&keyword=" + keyword,
         //url: "http://localhost:5000/info",
         type: "GET",
         dataType: "json",

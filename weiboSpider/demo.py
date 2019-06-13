@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, redirect, url_for
 import time
-from weibo import weibo
+from weiboSpider.Weibo import Weibo
 
 app = Flask(__name__)
 
@@ -14,7 +14,7 @@ def index():
 
     else:
         users.clear()
-        w = weibo()
+        w = Weibo()
 
         context = request.form.get('context')
         w.search(context, 2)

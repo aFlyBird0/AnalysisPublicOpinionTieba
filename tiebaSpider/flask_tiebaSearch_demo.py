@@ -89,7 +89,7 @@ def get_tieba_info():
 
 
 # 加载更多部分请求的url路由
-@app.route('/info_new', methods=['GET', 'POST'])
+@app.route('/tiebaInfoLoadMore', methods=['GET', 'POST'])
 def get_info_new():
     """
     调用前面写好的爬虫方法 和 情感分析接口

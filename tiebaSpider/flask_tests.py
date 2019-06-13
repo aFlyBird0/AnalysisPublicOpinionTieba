@@ -1,9 +1,8 @@
 from flask import Flask, request, render_template, redirect, url_for, make_response
-from tiebaSpider import spiderOnlyFirstFloorAdvance
 from SentimentAnalysis import Analysis
 from flask_bootstrap import Bootstrap
 import json
-from weiboSpider import weibo
+from weiboSpider.Weibo import Weibo
 
 app = Flask(__name__)
 
@@ -25,7 +24,7 @@ def get_weibo_info():
     """
     page = int(request.args.get('page'))  # 别问这个啥用处，我也不清楚，胶水粘起来的，能跑……
     keyword = request.args.get('keyword')
-    sina_weibo = weibo.weibo()
+    sina_weibo = Weibo()
     result = sina_weibo.search(context=keyword, pages=page)
     print(result)
     # result = spiderOnlyFirstFloorAdvance.get_json_first_floor_advance(page_order=page, keyword=keyword)
@@ -53,7 +52,12 @@ def get_weibo_info():
     print(rst)
     return rst
     """
-    return result
+    print(result)
+    result_json = json.dumps(result)
+    rst = make_response(result_json)
+    rst.headers['Access-Control-Allow-Origin'] = '*'
+    print(rst)
+    return rst
 
 
 if __name__ == '__main__':

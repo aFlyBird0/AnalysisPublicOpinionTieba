@@ -1,4 +1,4 @@
-import weiboSpider.web as web
+from weiboSpider.Web import Web
 import time
 import re
 
@@ -6,7 +6,7 @@ import requests
 from lxml import etree
 
 
-class weibo(web):
+class Weibo(Web):
     def __int__(self):
 
         super.__int__(self)
@@ -28,7 +28,7 @@ class weibo(web):
 
     def search(self, context, pages):
         self.card = []
-        for page in range(1, pages):
+        for page in range(1, pages + 1):
             self.set_url("https://s.weibo.com/weibo?q=%s&Refer=g&page=%d" % (context, page))
             self.g()
             names = self.tree.xpath('//div[@class="card-feed"]/div[@class="content"]//a[@class="name"]/text()')
@@ -44,15 +44,13 @@ class weibo(web):
                 self.card.append(y)
 
 
-# #    def parse_html(self):
-
 if __name__ == '__main__':
 
-    w = weibo()
+    w = Weibo()
     w.author = []
     w.text = []
-    sum = 1
-    w.search('杭州电子科技大学', 10)
+    # sum = 1
+    w.search('杭州电子科技大学', 3)
     #    print(w.card)
     for ca in w.card:
         print(ca)
