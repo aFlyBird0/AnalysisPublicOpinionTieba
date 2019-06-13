@@ -2,7 +2,7 @@ import requests
 from lxml import etree
 
 
-class web():
+class Web():
     def __int__(self):
         self.url = None
         self.response = None
@@ -30,7 +30,7 @@ class web():
 
 
 if __name__ == '__main__':
-    w = web()
+    w = Web()
 
     w.set_url("https://s.weibo.com/weibo?q=杭州电子科技大学&Refer=g&page=1")
     print(w.url)
