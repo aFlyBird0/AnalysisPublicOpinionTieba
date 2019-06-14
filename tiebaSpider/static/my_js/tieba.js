@@ -12,7 +12,7 @@ $(document).ready(function () {
             page = $("#page").val(),
             keyword = $("#keyword").val());
         page_g = parseInt($("#page").val());
-        console.log("开始时的page_g的值为 ： "+page_g)
+        console.log("开始时的page_g的值为 ： "+page_g);
     });
 
     $("#readMore").click(function () {
@@ -20,7 +20,7 @@ $(document).ready(function () {
         loadMore(
             page = page_g,
             keyword = $("#keyword").val());
-        console.log("按下加载更多后的page_g的值为 ： "+page_g)
+        console.log("按下加载更多后的page_g的值为 ： "+page_g);
     });
 
 });
@@ -58,7 +58,8 @@ function searchInfo(page, keyword) {
                                         <small style='margin-left: 10px'>` + result[i].emotion + `</small> 
                                         <small style='margin-left: 10px'>` + result[i].emotion_type + `</small>
                                     <h5>
-                                    <p class='text-muted' style='margin-bottom: 0.5em'>` + result[i].href + `</p>
+<!--                                    <p class='text-muted' style='margin-bottom: 0.5em'>` + result[i].href + `</p>-->
+                                    <p class='text-muted' style='margin-bottom: 0.5em'> <a target="_blank" href="` + result[i].href + `">` + result[i].href + `</a> 
                                     <p class='card-text'>` + result[i].firstFloorContent + `</p>
                                 </div>
                             </div>
@@ -110,7 +111,9 @@ function loadMore(page_g, keyword) {
                                         <small style='margin-left: 10px'>` + result[i].emotion + `</small> 
                                         <small style='margin-left: 10px'>` + result[i].emotion_type + `</small>
                                     <h5>
-                                    <p class='text-muted' style='margin-bottom: 0.5em'>` + result[i].href + `</p>
+<!--                                    <p class='text-muted' style='margin-bottom: 0.5em'>` + result[i].href + `</p>-->
+<!--                                    <p class='text-muted' style='margin-bottom: 0.5em'> <a href="` + result[i].href + `">` + result[i].href + `</a> </p>-->
+                                    <p class='text-muted' style='margin-bottom: 0.5em'> <a target="_blank" href="` + result[i].href + `">` + result[i].href + `</a> 
                                     <p class='card-text'>` + result[i].firstFloorContent + `</p>
                                 </div>
                             </div>
